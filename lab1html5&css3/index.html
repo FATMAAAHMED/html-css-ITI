@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- //font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- start heade  -->
+    <header> 
+        <img src="skills-01.jpg">
+        <div class="text">
+            <h1>Fatma Ahmed</h1>
+            <h2>web developer</h2>
+            <h3>Full Stack Web Developer Using .Net </h3> 
+        </div>
+    </header>
+    <!-- end header  -->
+    <!-- stat section  -->
+    <div class="container">
+        <section>
+            <div  class="basicInfo" onclick="playaudio()"; ondblclick="pauseaudio()"><h2>contacts</h2>
+                <div><i style="font-size: 20px;" class="fa-sharp fa-solid fa-house"></i> qena, egypt</div>
+                <div><i style="font-size: 20px;" class="fa-solid fa-mobile"></i> 015329290284 </div>
+                <div><i style="font-size: 20px;" class="fa-solid fa-envelope"></i> fatma@gmail.com</div>
+            </div>
+            <audio id="aud" hidden>
+            <source src="file_example_WAV_1MG.wav">
+            </audio> 
+            <!-- start languages -->
+            <div  class="languages">
+                <h3 >langages</h3>
+                <div id="en"> 
+                    <p>English</p>
+                    <progress value="60" max="100"></progress>
+                </div>
+                <div id="ge">
+                    <p>German</p>
+                    <progress value="30" max="100"></progress>
+                </div>
+                <div id="sp"> 
+                    <p>Spanish</p>
+                    <progress value="50" max="100"></progress>
+                </div>
+            </div>
+            <!-- end languages  -->
+            <video onclick="pausevideo()" autoplay muted>
+            <source src="sample.mp4">
+            </video>
+            <!-- strart skills  -->
+            <h3>skills</h3>
+            <div class="skills">
+                <div class="inner">AI</div>
+                <div class="inner">CSS</div>
+                <div class="inner">Js</div>
+                <div class="inner">ES</div>
+            </div>
+            <!-- end skills -->
+        </section>
+        <!-- end section  -->
+        <!-- start aside -->
+        <aside>
+            <div class="aside">
+                <h2>Acheivment</h2>
+                <h3>2010 loream</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. repudiandae cumque.</p>
+            </div>
+            <div class="aside">
+                <h2>Acheivment</h2>
+                <h3>2010 loream</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. repudiandae cumque.</p>
+            </div>
+            <div class="aside">
+                <h2>Acheivment</h2>
+                <h3>2010 loream</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. repudiandae cumque.</p>
+
+            </div>
+        </aside>
+        <!-- end aside -->
+    </div>
+    <!-- end container -->
+    <!-- <div style="clear: both;"></div> -->
+    <footer>
+        <p>
+        <div style="background-color: brown;"></div>
+        <div style="background-color: green;"></div>
+        <div style="background-color: blue;"></div>
+        </p>
+    </footer>
+    <script>
+        var aud= document.getElementById("aud")
+        function playaudio(){
+                aud.play();
+        }
+        function pauseaudio(){
+            aud.pause();
+        }
+        // video playing
+        var vid=document.getElementsByTagName("video")[0]
+        function pausevideo(){
+            vid.pause()
+        }
+    </script>
+</body>
+</html>

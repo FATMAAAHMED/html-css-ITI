@@ -1,0 +1,42 @@
+p,div,span{
+    font-family: "Lucida Calligraphy" ;
+}
+div h1{
+    text-align: center;
+}
+#linksbar ul li a{
+    background-color: pink;
+    color: red;
+    text-decoration: none;
+}
+#linksbar ul li a:hover{
+    background-color: red;
+    color: pink;
+}
+#content>h2+p{
+    font-weight: bold;
+    font-size: 12px; 
+}
+#loginform{
+    border: 2px dashed rgb(20, 70,60);
+}
+input[type="text"]{
+    background-color: yellow;
+}
+input[type="text"]:focus{
+    background-color:white;
+}
+.tabled-borderd{
+    display: inline;
+    padding: 5px;
+    border: 1px solid black;
+}
+span p::after{
+    content: "Read This";
+    color: yellow;
+
+}
+#loginform .required::after{
+    content:"*";
+    color:red;
+}

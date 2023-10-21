@@ -1,0 +1,79 @@
+/* start nav bar  */
+nav ul li{
+    list-style-type: none;
+    display:inline-block ;
+    border-radius: 10px 20px;
+    /* float: left; */
+    background-color: gray;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    transition: background-color 2s ease-in-out;
+}
+nav ul li:hover{
+    background-color: rgb(49, 93, 49);
+}
+/* end nav bar */
+/* start web fonts */
+.webfont h1{
+    font-family: 'Unbounded', cursive;
+    }
+/* end web fonts  */
+/* start server font */
+@font-face {
+    font-family: "arabic";
+    src: url(serverfonts/Lemonada-VariableFont_wght.ttf);
+}
+.serverfont h1{
+    font-family: 'arabic',serif;
+}
+/* end server font */
+
+
+/*  */
+.personalIcon{
+    display:flex;
+    position: relative;
+    margin: 20px 50%;
+}
+.personalIcon img{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    z-index: 1;
+}
+.personalIcon .name{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: lightgray;
+    border-radius: 50px ;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    opacity: 0;
+    transition: all 2s ease-in-out;
+    
+}
+.personalIcon .name i{
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+    color: gray;
+}
+
+/* start images */
+.iamges{
+    margin: 100px;
+}
+.iamges img{
+    width: 220px;
+    height: 220px;
+    transition: all 2s ease-in-out;
+}
+.iamges img:hover{
+    transform: scale(1.5,1.5);
+    box-shadow: 0 0 20px 10px lightblue;
+}
+/* end images */
